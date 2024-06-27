@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     public float speed;
     private bool isfacingright = true;
     public Animator animator;
+    public AudioSource audiosorce;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundcek;
@@ -18,7 +19,6 @@ public class Movement : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-
         animator.SetFloat("speed", Mathf.Abs(horizontal));
 
         flip();

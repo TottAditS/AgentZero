@@ -5,15 +5,16 @@ using UnityEngine;
 public class WaterRise : MonoBehaviour
 {
     public float risespeed;
-    public Transform water;
+    public GameObject water;
+    public Rigidbody2D rb;
 
-    void Update()
+    private void Awake()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    void Rising()
+    private void Update()
     {
-        
+        rb.velocity = Vector2.up * risespeed;
     }
 }

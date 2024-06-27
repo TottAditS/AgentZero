@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Object
+  - Trashcan
+  - PintuKemenangan
+  - PintuKemajuan
+  - banjir
   layers:
   - Default
   - TransparentFX
@@ -15,7 +19,7 @@ TagManager:
   - Ground
   - Object
   - Player
-  - 
+  - Trashcan
   - 
   - 
   - 
@@ -44,4 +48,7 @@ TagManager:
     locked: 0
   - name: Backround
     uniqueID: 3325117245
+    locked: 0
+  - name: particle
+    uniqueID: 3970929227
     locked: 0

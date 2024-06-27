@@ -7,7 +7,7 @@ public class GrabControl : MonoBehaviour
     public Transform detect;
     public Transform holder;
     public float raydist;
-    private bool full;
+    public bool full;
     private GameObject bawaan;
 
     void Start()
@@ -38,6 +38,15 @@ public class GrabControl : MonoBehaviour
                 full = false;
                 Debug.Log("turun");
             }
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.CompareTag("Trashcan"))
+        {
+            full = false;
+            Debug.Log("buang");
         }
     }
 }
