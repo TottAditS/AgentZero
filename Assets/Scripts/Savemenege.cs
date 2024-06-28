@@ -42,13 +42,13 @@ public class Savemenege : MonoBehaviour
     public void save()
     {
 
-        Debug.Log("BODOLAH SAVE");
+        //Debug.Log("SAVE");
 
         PemainSetruk pemain = new PemainSetruk();
 
         if (SceneManager.GetActiveScene().buildIndex == 1) //MAIN MENU
         {
-            Debug.Log("BODOLAH SAVE 1");
+            //Debug.Log("SAVE 1");
 
             pemain.name = nama.namaku;
 
@@ -61,7 +61,7 @@ public class Savemenege : MonoBehaviour
 
         else if (SceneManager.GetActiveScene().buildIndex == 0) //SCENE PROLOG
         {
-            Debug.Log("BODOLAH SAVE 2");
+            //Debug.Log("SAVE 2");
             pemain.kebersihan = buang.kebersihankita;
             pemain.name = taronama;
 
@@ -75,7 +75,7 @@ public class Savemenege : MonoBehaviour
 
         else if (SceneManager.GetActiveScene().buildIndex == 2) //SCENE STAGE1
         {
-            Debug.Log("BODOLAH SAVE 3");
+            //Debug.Log("SAVE 3");
 
             pemain.kebersihan = buang.kebersihankita;
             pemain.times = waktu.mengalir;
@@ -89,15 +89,15 @@ public class Savemenege : MonoBehaviour
     }
     public void load()
     {
-        Debug.Log("BODOLAH LOAD");
+        //Debug.Log("LOAD");
 
-        string sanjaya = File.ReadAllText(Application.dataPath + "/JanganDibuka.json");
-        PemainSetruk loaddata = JsonUtility.FromJson<PemainSetruk>(sanjaya);
+        string dataload = File.ReadAllText(Application.dataPath + "/JanganDibuka.json");
+        PemainSetruk loaddata = JsonUtility.FromJson<PemainSetruk>(dataload);
 
         if (SceneManager.GetActiveScene().buildIndex == 0) //load prolog
         {
-            Debug.Log("NLOD RPOLOG");
-            Debug.Log(sanjaya);
+            //Debug.Log("NLOD RPOLOG");
+            Debug.Log(dataload);
 
             taronama = loaddata.name;
             playername.text = taronama;
@@ -105,12 +105,12 @@ public class Savemenege : MonoBehaviour
 
         else if (SceneManager.GetActiveScene().buildIndex == 2) //load scene 1
         {
-            Debug.Log("NLOD STAGE1");
+            //Debug.Log("NLOD STAGE1");
             taronama = loaddata.name;
             tarotimer = loaddata.times;
             tarojumlah = loaddata.kebersihan;
 
-            Debug.Log(sanjaya);
+            Debug.Log(dataload);
 
             playername.text = taronama;
             trashslider.value = tarojumlah;
@@ -119,12 +119,12 @@ public class Savemenege : MonoBehaviour
 
         else if (SceneManager.GetActiveScene().buildIndex == 1) //load menu
         {
-            Debug.Log("NLOD STAGE3");
+            //Debug.Log("NLOD STAGE3");
             taronama = loaddata.name;
             tarotimer = loaddata.times;
             tarojumlah = loaddata.kebersihan;
 
-            Debug.Log(sanjaya);
+            Debug.Log(dataload);
 
             playername.text = taronama;
             trashslider.value = tarojumlah;

@@ -31,7 +31,7 @@ public class Winning : MonoBehaviour
 
         if (collision.gameObject.CompareTag("banjir"))
         {
-            Debug.Log("kena air");
+            //Debug.Log("kena air");
             if (life > 0)
             {
                 life -= Time.deltaTime;

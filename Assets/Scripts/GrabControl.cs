@@ -27,7 +27,7 @@ public class GrabControl : MonoBehaviour
                 grabcek.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
                 grabcek.collider.isTrigger = true;
                 full = true;
-                Debug.Log("angkat");
+                //Debug.Log("angkat");
             }
 
             else if (Input.GetKeyDown(KeyCode.G) && full != false)
@@ -36,7 +36,7 @@ public class GrabControl : MonoBehaviour
                 grabcek.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
                 grabcek.collider.isTrigger = false;
                 full = false;
-                Debug.Log("turun");
+                //Debug.Log("turun");
             }
         }
     }
@@ -46,7 +46,7 @@ public class GrabControl : MonoBehaviour
         if (collision.CompareTag("Trashcan"))
         {
             full = false;
-            Debug.Log("buang");
+            //Debug.Log("buang");
         }
     }
 }

@@ -20,6 +20,6 @@ public class Nameinput : MonoBehaviour
     {
         inputext = input;
         namaku = inputext;
-        Debug.Log("NAMAKU : " + namaku);
+        //Debug.Log("NAMAKU : " + namaku);
     }
 }

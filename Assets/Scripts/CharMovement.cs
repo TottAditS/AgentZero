@@ -21,6 +21,17 @@ public class Movement : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         animator.SetFloat("speed", Mathf.Abs(horizontal));
 
+        if (Mathf.Abs(horizontal) > 0)
+        {
+            audiosorce.loop = true;
+            audiosorce.Play();
+        }
+        else
+        {
+            audiosorce.Stop();
+            audiosorce.loop = false;
+        }
+
         flip();
 
         if (Input.GetKeyDown(KeyCode.Space) && isground())
