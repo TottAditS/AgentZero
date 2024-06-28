@@ -46,7 +46,7 @@ public class Savemenege : MonoBehaviour
 
         PemainSetruk pemain = new PemainSetruk();
 
-        if (SceneManager.GetActiveScene().buildIndex == 1) //MAIN MENU
+        if (SceneManager.GetActiveScene().buildIndex == 0) //MAIN MENU
         {
             //Debug.Log("SAVE 1");
 
@@ -59,7 +59,7 @@ public class Savemenege : MonoBehaviour
             taronama = nama.namaku;
         }
 
-        else if (SceneManager.GetActiveScene().buildIndex == 0) //SCENE PROLOG
+        else if (SceneManager.GetActiveScene().buildIndex == 2) //SCENE PROLOG
         {
             //Debug.Log("SAVE 2");
             pemain.kebersihan = buang.kebersihankita;
@@ -73,7 +73,7 @@ public class Savemenege : MonoBehaviour
             tarojumlah = buang.kebersihankita;
         }
 
-        else if (SceneManager.GetActiveScene().buildIndex == 2) //SCENE STAGE1
+        else if (SceneManager.GetActiveScene().buildIndex == 3) //SCENE STAGE1
         {
             //Debug.Log("SAVE 3");
 
@@ -94,7 +94,7 @@ public class Savemenege : MonoBehaviour
         string dataload = File.ReadAllText(Application.dataPath + "/JanganDibuka.json");
         PemainSetruk loaddata = JsonUtility.FromJson<PemainSetruk>(dataload);
 
-        if (SceneManager.GetActiveScene().buildIndex == 0) //load prolog
+        if (SceneManager.GetActiveScene().buildIndex == 2) //load prolog
         {
             //Debug.Log("NLOD RPOLOG");
             Debug.Log(dataload);
@@ -103,7 +103,7 @@ public class Savemenege : MonoBehaviour
             playername.text = taronama;
         }
 
-        else if (SceneManager.GetActiveScene().buildIndex == 2) //load scene 1
+        else if (SceneManager.GetActiveScene().buildIndex == 3) //load stage 1
         {
             //Debug.Log("NLOD STAGE1");
             taronama = loaddata.name;
@@ -117,7 +117,7 @@ public class Savemenege : MonoBehaviour
             timertext.text = tarotimer.ToString();
         }
 
-        else if (SceneManager.GetActiveScene().buildIndex == 1) //load menu
+        else if (SceneManager.GetActiveScene().buildIndex == 0) //load menu
         {
             //Debug.Log("NLOD STAGE3");
             taronama = loaddata.name;
