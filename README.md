@@ -1,7 +1,7 @@
 <h1>Agent Zero</h1>
 
 <h3>About This Project</h3>
-**Agent Zero** initially started as a project assignment. Afterwards, I kept working on this project.
+Agent Zero initially started as a project assignment for Game Programming and Serious Games. Afterwards, I kept working on this project.
 
 <h3>Project Info</h3>
 
