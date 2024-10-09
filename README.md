@@ -9,6 +9,12 @@ Agent Zero initially started as a project assignment for Game Programming and Se
 |----------|---------------|---------------------|------------|
 | Game Programmer | 3 | 1 Month | Unity 2022 |
 
+# Meet the Team
+
+- Totti Adithana Sunarto (Game Programmer & Techinal Programmer)
+- Aaron Medhavi Kusnandar (Asset Manager & Sound Designer)
+- Kelvin (Game Designer)
+
 <h3>Description</h3>
 <p align="justify">Agent Zero is a two-dimensional platformer video game where players can experience a realistic flood simulation and learn about the factors that cause floods, such as improper waste disposal. The game is designed for PC users. Players are tasked with avoiding obstacles caused by the flood and collecting trash in their environment. The game ends if all trash is collected and no flood occurs, or if a flood happens and the player loses.</p>
 
