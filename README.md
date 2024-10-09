@@ -4,6 +4,7 @@
 **Agent Zero** initially started as a project assignment. Afterwards, I kept working on this project.
 
 <h3>Project Info</h3>
+
 | **Role** | **Team Size** | **Development Time** | **Engine** |
 |----------|---------------|---------------------|------------|
 | Game Programmer | 3 | 1 Month | Unity 2022 |
