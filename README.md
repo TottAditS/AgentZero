@@ -1,17 +1,17 @@
 <h1>Agent Zero</h1>
 
-## About
+<h3>About This Project</h3>
 **Agent Zero** initially started as a project assignment. Afterwards, I kept working on this project.
 
-## Project Info
+<h3>Project Info</h3>
 | **Role** | **Team Size** | **Development Time** | **Engine** |
 |----------|---------------|---------------------|------------|
 | Game Programmer | 3 | 1 Month | Unity 2022 |
 
-## Description
+<h3>Description</h3>
 **Agent Zero** is a two-dimensional platformer video game where players can experience a realistic flood simulation and learn about the factors that cause floods, such as improper waste disposal. The game is designed for PC users. Players are tasked with avoiding obstacles caused by the flood and collecting trash in their environment. The game ends if all trash is collected and no flood occurs, or if a flood happens and the player loses.
 
-## About the Game
+<h3>About Game</h3>
 Agent Zero is a prototype game themed around **Natural Disasters** and **Education**. The game currently has two levels, and the levels are connected to each other, so what you do on level 1 will have consequences on another level. This is my third game built using the Unity Engine. It's not perfect, but it still has its ups and downs, and I will finish the game soon.
 
 <h3>Gameplay</h3>
