@@ -10,6 +10,7 @@ Agent Zero initially started as a project assignment for Game Programming and Se
 | Game Programmer | 3 | 1 Month | Unity 2022 |
 
 <h3>Meet the Team</h3>
+
 - Totti Adithana Sunarto (Game Programmer & Techinal Programmer)
 - Aaron Medhavi Kusnandar (Asset Manager & Sound Designer)
 - Kelvin (Game Designer)
