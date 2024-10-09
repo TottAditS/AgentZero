@@ -3,14 +3,14 @@
 <table>
   <thead>
     <tr>
-      <th width="500px" align="center">About</th>
-      <th width="500px" align="center">Project Info</th>
+      <th width="500px" align="left">About</th>
+      <th width="500px" align="left">Project Info</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th width="500px" align="center">This game initially started as a project assignment. Afterwards, I kept working on this project</th>
-      <th width="500px" align="center">Role : Game Programmer</th>
+      <th width="500px" align="left">This game initially started as a project assignment. Afterwards, I kept working on this project</th>
+      <th width="500px" align="left">Role : Game Programmer\n Team Size : 3\n Development Time : 1 Month\n Engine : Unity 2022\n</th>
     </tr>
   </tbody>
 </table>
