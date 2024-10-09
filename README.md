@@ -15,26 +15,6 @@
   </tbody>
 </table>
 
-# Bug Shooter
-
-## About
-Bug Shooter initially started as a gradable assignment for a FutureGames course. Afterwards, I kept working on the project, adding a second spatial data structure to compare the results and a background generator by using the Wave Function Collapse algorithm.
-
-## Project Info
-| **Role** | **Team Size** | **Time Frame** | **Engine** |
-|----------|---------------|----------------|------------|
-| Gameplay Programmer | 1 | 6 Weeks | SDL 2 (C++) |
-
-## Introduction
-This space shooter game was a fun and challenging project for me, where I had the opportunity to work on creating my own ECS in C++, focusing on **optimization** and getting a better understanding of the Performance Profiler in Visual Studio.
-
-In order to gain a better understanding of procedural generation, I wanted to build a background generator using the **Wave Function Collapse** algorithm. I decided on the wave function collapse algorithm because it appealed the most to me, and it can be used in a variety of ways.
-
-Additionally, I added both a **spatial hash** and a **quadtree** as spatial data structures so that I could compare how well both of them performed. This was a fun and interesting learning experience that gave me a better understanding of the advantages and disadvantages between the two.
-
-Working on a project by myself was a fun and educational experience, as I was able to fully focus on the development process and learn a lot during the process. However, **I prefer working with a team** as it allows for a more dynamic and collaborative work environment, where I can bounce ideas off others and learn from their diverse perspectives and expertise.
-
-
 <p>
   Agent Zero is a two-dimensional platformer video game 
   where players can experience a realistic flood simulation and learn 
