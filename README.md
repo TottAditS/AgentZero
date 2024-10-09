@@ -1,5 +1,20 @@
 <h1>Agent Zero</h1>
 
+<table>
+  <thead>
+    <tr>
+      <th width="500px" align="center">About</th>
+      <th width="500px" align="center">Project Info</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th width="500px" align="center">This game initially started as a project assignment. Afterwards, I kept working on this project</th>
+      <th width="500px" align="center">Role : Game Programmer</th>
+    </tr>
+  </tbody>
+</table>
+
 <p>
   Agent Zero is a two-dimensional platformer video game 
   where players can experience a realistic flood simulation and learn 
