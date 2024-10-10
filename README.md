@@ -1,3 +1,5 @@
+
+![agentz-ezgif com-optimize](https://github.com/user-attachments/assets/9eb540c8-e98e-4135-9487-2343bc409622)
 <h1>Agent Zero</h1>
 
 <h3>About This Project</h3>
