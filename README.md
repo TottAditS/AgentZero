@@ -36,6 +36,33 @@ All you do on the previous level will impact this level, basically, the more tra
 <h3>What I Learned From Make This Game</h3>
 <p align="justify">Working on Agent Zero has been a valuable learning experience, particularly in areas related to optimization, resource management, and creating efficient game mechanics. Throughout the project, I’ve deepened my understanding of performance profiling in Unity and have applied strategies to minimize memory usage, which aligns with my personal interest in game optimization. Additionally, implementing various level interactions and educational elements pushed me to explore different problem-solving techniques, allowing me to address complex challenges in smaller, more manageable chunks. I used to spend a lot of time making my code overly modular and abstract in anticipation of future additions. However, while working on Agent Zero, I adopted a more straightforward approach, focusing on building only what’s necessary to meet the current requirements. This shift not only streamlined my workflow but also gave me more flexibility to iterate and improve the game as new ideas emerged. I plan to continue refining this method in future projects, prioritizing practical solutions and refactoring when necessary.</p>
 
+## Files description
+
+```
+├── AgentZero                      # In this Folder, containing all the Unity project files, to be opened by a Unity Editor
+   ├── ...
+   ├── Assets                         #  In this Folder, it contains all our code, assets, scenes, etcwas not automatically created by Unity
+      ├── ...
+      ├── 3rdParty                   # In this folder, there are several packages that you must add via Unity Package Manager
+      ├── Scenes                     # In this folder, there are scenes. You can open these scenes to play the game via Unity
+      ├── ....
+   ├── ...
+      
+```
+<br>
+
+## Game controls
+
+The following controls are bound in-game, for gameplay and testing.
+
+| Key Binding       | Function          |
+| ----------------- | ----------------- |
+| A,D           | Standard movement P1|
+| G           | Grab Drop Interact |
+| Space           | Jump |
+
+<br>
+
 # Guide To This Game
 <h3>Controls</h3>
 If VsPlayer, For P1:
