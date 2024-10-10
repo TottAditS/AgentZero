@@ -64,7 +64,7 @@ The following controls are bound in-game, for gameplay and testing.
 <br>
 
 # Download Game
-<p width="500px" align="left"><a href="https://tottadits.itch.io/agent-zero">KnightNPong Itch Page</p>
+<p width="500px" align="left"><a href="https://tottadits.itch.io/agent-zero">Agent Zero Itch Page</p>
 
 <h3>Setup</h3>
 - You dont have to download all of the repository, if you just want to play, just download the folder named "Builded"
