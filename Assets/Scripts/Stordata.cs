@@ -32,7 +32,6 @@ public class Stordata : MonoBehaviour
 
     public void melakukansave()
     {
-        Debug.Log("BODOLAH LAKUINSAVE");
         taronama = saveme.nama.namaku;
         tarojumlah = saveme.buang.kebersihankita;
         tarotimer = saveme.waktu.mengalir;
@@ -44,7 +43,6 @@ public class Stordata : MonoBehaviour
     }
     public void melakukanload()
     {
-        Debug.Log("BODOLAH LAKUINLOAD");
         playername.text = taronama;
         trashslider.value = tarojumlah;
         timertext.text = tarotimer.ToString();
