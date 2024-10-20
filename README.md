@@ -9,7 +9,9 @@
 
 | **Role** | **Team Size** | **Development Time** | **Engine** |
 |----------|---------------|---------------------|------------|
-| Game Programmer | 3 | 1 Month | Unity 2022 |
+| Game Programmer | 1 | 1 Week | Unity 2022 |
+| Game Designer | 1 | 1 Week | Unity 2022 |
+| Asset Manager | 1 | 1 Week | Unity 2022 |
 
 <h3>Meet the Team</h3>
 
@@ -45,6 +47,15 @@ Pemain loaddata = JsonUtility.FromJson<Pemain>(dataload);
 
 <h3>What I Learned From Make This Game</h3>
 <p align="justify">Working on Agent Zero has been a valuable learning experience, particularly in areas related to optimization, resource management, and creating efficient game mechanics. Throughout the project, I’ve deepened my understanding of performance profiling in Unity and have applied strategies to minimize memory usage, which aligns with my personal interest in game optimization. Additionally, implementing various level interactions and educational elements pushed me to explore different problem-solving techniques, allowing me to address complex challenges in smaller, more manageable chunks. I used to spend a lot of time making my code overly modular and abstract in anticipation of future additions. However, while working on Agent Zero, I adopted a more straightforward approach, focusing on building only what’s necessary to meet the current requirements. This shift not only streamlined my workflow but also gave me more flexibility to iterate and improve the game as new ideas emerged. I plan to continue refining this method in future projects, prioritizing practical solutions and refactoring when necessary.</p>
+
+|  Script       | Description                                                  |
+| ------------------- | ------------------------------------------------------------ |
+| `Savemenege.cs` | Responsible for saving the user score of the game. |
+| `Nameinput.cs`  | Manages input name behaviour in the game |
+| `Charmovement.cs`  | Responsible for how the player control in the game. |
+| `Soundmanager.cs`  | Manages the Sound and SFX in the game |
+| `stordata.cs`  | Manages the logic behind save data Management [not implemented] |
+| `etc`  |
 
 ## Files description
 
