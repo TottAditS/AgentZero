@@ -10,8 +10,8 @@
 | **Role** | **Team Size** | **Development Time** | **Engine** |
 |----------|---------------|---------------------|------------|
 | Game Programmer | 1 | 1 Week | Unity 2022 |
-| Game Designer | 1 | 1 Week | Unity 2022 |
-| Asset Manager | 1 | 1 Week | Unity 2022 |
+| Game Designer | 1 | 1 Week | Gitbook |
+| Asset Manager | 1 | 1 Week | Unity Store & Itch io |
 
 <h3>Meet the Team</h3>
 
