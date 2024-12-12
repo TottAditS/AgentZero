@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Agent Zero - Education/Scene/Menu.unity
+    guid: 2a8e382be95378f46a2a0f8e0c7ff15f
+  - enabled: 1
+    path: Assets/Agent Zero - Education/Scene/Education.unity
+    guid: 817874f032f667847ad4ebfdc08f6150
+  - enabled: 1
     path: Assets/Old Zero/Scenes/MainMenu.unity
     guid: 924fc818a5ec2ca478e2dcdaf39ab91c
   - enabled: 1
