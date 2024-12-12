@@ -1,20 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     public GameObject MainPanel;
     public GameObject SettingsPanel;
     public GameObject TutorialPanel;
+    public Slider volumeSlider;
 
     void Start()
     {
         MainPanel.SetActive(true);
         SettingsPanel.SetActive(false);
         TutorialPanel.SetActive(false);
+        if (volumeSlider != null)
+        {
+            volumeSlider.value = 1;
+        }
     }
 
     public void StartGame()
@@ -38,6 +43,14 @@ public class UIManager : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene("Education");
+    }
+
+    public void SetVolume()
+    {
+        if (volumeSlider != null)
+        {
+            SoundManager.instance.SetMasterVolume(volumeSlider.value);
+        }
     }
 
     public void QuitGame()
