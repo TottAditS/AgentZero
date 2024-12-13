@@ -11,11 +11,22 @@ public class UIManager : MonoBehaviour
     public GameObject TutorialPanel;
     public Slider volumeSlider;
 
+    [Header("Prologue")]
+    public GameObject prologuePanel;
+    public Image prologueImage;
+    public Sprite[] prologueSprites; 
+    public AudioClip[] prologueNarration; 
+    public float imageDisplayTime = 5f;
+    private AudioSource narrationSource;
+
+
     void Start()
     {
         MainPanel.SetActive(true);
         SettingsPanel.SetActive(false);
         TutorialPanel.SetActive(false);
+        prologuePanel.SetActive(false);
+        narrationSource = gameObject.AddComponent<AudioSource>();
         if (volumeSlider != null)
         {
             volumeSlider.value = 1;
@@ -40,8 +51,32 @@ public class UIManager : MonoBehaviour
         SettingsPanel.SetActive(false);
     }
 
-    public void PlayGame()
+    public void PanelTutorialClicked()
     {
+        TutorialPanel.SetActive(false);
+        StartCoroutine(Prologue());
+    }
+
+    private IEnumerator Prologue()
+    {
+        prologuePanel.SetActive(true);
+        for (int i = 0; i < prologueSprites.Length; i++)
+        {
+            prologueImage.sprite = prologueSprites[i];
+            if (i < prologueNarration.Length && prologueNarration[i] != null)
+            {
+                narrationSource.clip = prologueNarration[i];
+                narrationSource.Play();
+            }
+            if (narrationSource.isPlaying)
+            {
+                yield return new WaitForSeconds(Mathf.Max(imageDisplayTime, narrationSource.clip.length));
+            }
+            else
+            {
+                yield return new WaitForSeconds(imageDisplayTime);
+            }
+        }
         SceneManager.LoadScene("Education");
     }
 
