@@ -1256,8 +1256,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Go to train station\n                                 ->"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
-  m_sharedMaterial: {fileID: -1183843641732156792, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1346,7 +1346,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1183843641732156792, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1596,8 +1596,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Adit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
-  m_sharedMaterial: {fileID: -1183843641732156792, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1905,8 +1905,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.50280005, y: -2.74035, z: 0}
-    m_Extent: {x: 2.4135, y: 3.5983498, z: 0}
+    m_Center: {x: -0.50345, y: -2.7403002, z: 0}
+    m_Extent: {x: 2.41275, y: 3.5983, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -1961,8 +1961,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Trash Everywhere...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
-  m_sharedMaterial: {fileID: -1183843641732156792, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2051,7 +2051,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1183843641732156792, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3251,8 +3251,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.50294995, y: -2.74055, z: 0}
-    m_Extent: {x: 2.41325, y: 3.59935, z: 0}
+    m_Center: {x: -0.50304997, y: -2.7399, z: 0}
+    m_Extent: {x: 2.41215, y: 3.5983, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -3647,8 +3647,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0668, y: -2.4092, z: 0}
-    m_Extent: {x: 2.6978998, y: 3.267, z: 0}
+    m_Center: {x: 0.06715, y: -2.4085002, z: 0}
+    m_Extent: {x: 2.69865, y: 3.2668, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -4068,8 +4068,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.5036, y: -2.7409, z: 0}
-    m_Extent: {x: 2.4127002, y: 3.5987, z: 0}
+    m_Center: {x: -0.50240004, y: -2.74085, z: 0}
+    m_Extent: {x: 2.4123, y: 3.59895, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -11016,8 +11016,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.50210005, y: -2.74015, z: 0}
-    m_Extent: {x: 2.4128, y: 3.5991502, z: 0}
+    m_Center: {x: -0.50275, y: -2.7409, z: 0}
+    m_Extent: {x: 2.41295, y: 3.5981998, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -11518,8 +11518,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.50224996, y: -2.7403, z: 0}
-    m_Extent: {x: 2.41275, y: 3.5993001, z: 0}
+    m_Center: {x: -0.50265, y: -2.74015, z: 0}
+    m_Extent: {x: 2.41315, y: 3.59875, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -11600,8 +11600,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.068099976, y: -2.40945, z: 0}
-    m_Extent: {x: 2.6979, y: 3.26685, z: 0}
+    m_Center: {x: 0.0670501, y: -2.4087, z: 0}
+    m_Extent: {x: 2.69795, y: 3.2666001, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -11682,8 +11682,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.50209993, y: -2.7405, z: 0}
-    m_Extent: {x: 2.4125, y: 3.5986, z: 0}
+    m_Center: {x: -0.50215, y: -2.7408, z: 0}
+    m_Extent: {x: 2.41285, y: 3.5986, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -12122,8 +12122,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '||'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
-  m_sharedMaterial: {fileID: -1183843641732156792, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17230,8 +17230,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.50265, y: -2.74035, z: 0}
-    m_Extent: {x: 2.41185, y: 3.5982502, z: 0}
+    m_Center: {x: -0.50289994, y: -2.74035, z: 0}
+    m_Extent: {x: 2.4124, y: 3.5982502, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -17396,8 +17396,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.50329995, y: -2.7398999, z: 0}
-    m_Extent: {x: 2.4129, y: 3.5988, z: 0}
+    m_Center: {x: -0.50245, y: -2.7401001, z: 0}
+    m_Extent: {x: 2.41325, y: 3.5985, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -17653,7 +17653,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: a6dcf4f8d4c20214aa6428ea6e9de603, type: 3}
-  m_Color: {r: 0.5169811, g: 0.5169811, b: 0.5169811, a: 1}
+  m_Color: {r: 0.14695442, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -17872,8 +17872,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.50315005, y: -2.7401, z: 0}
-    m_Extent: {x: 2.41265, y: 3.5984, z: 0}
+    m_Center: {x: -0.50350004, y: -2.7402, z: 0}
+    m_Extent: {x: 2.4128, y: 3.5987, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -18551,7 +18551,7 @@ SpriteRenderer:
   m_Size: {x: 0.47, y: 0.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1065273951
@@ -18635,8 +18635,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.5025, y: -2.7404501, z: 0}
-    m_Extent: {x: 2.4122, y: 3.59845, z: 0}
+    m_Center: {x: -0.50219995, y: -2.7401998, z: 0}
+    m_Extent: {x: 2.4131, y: 3.5992, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -18885,8 +18885,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.5022, y: -2.7397501, z: 0}
-    m_Extent: {x: 2.4127002, y: 3.59845, z: 0}
+    m_Center: {x: -0.5028, y: -2.7403002, z: 0}
+    m_Extent: {x: 2.4129, y: 3.5994, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -18989,7 +18989,7 @@ SpriteRenderer:
   m_Size: {x: 0.47, y: 0.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1104066379
@@ -19308,8 +19308,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.5022, y: -2.74055, z: 0}
-    m_Extent: {x: 2.4123, y: 3.59795, z: 0}
+    m_Center: {x: -0.50245, y: -2.7402, z: 0}
+    m_Extent: {x: 2.41225, y: 3.5986, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -19390,8 +19390,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.5030999, y: -2.741, z: 0}
-    m_Extent: {x: 2.4122, y: 3.5985, z: 0}
+    m_Center: {x: -0.50265, y: -2.7407, z: 0}
+    m_Extent: {x: 2.41325, y: 3.5989, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -21199,7 +21199,7 @@ SpriteRenderer:
   m_Size: {x: 0.48, y: 0.18}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1390384627
@@ -26257,8 +26257,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Station ahead ->
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
-  m_sharedMaterial: {fileID: -1183843641732156792, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -26347,7 +26347,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1183843641732156792, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
+  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26454,8 +26454,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.068099976, y: -2.40865, z: 0}
-    m_Extent: {x: 2.6978, y: 3.26755, z: 0}
+    m_Center: {x: 0.06675005, y: -2.4088502, z: 0}
+    m_Extent: {x: 2.69825, y: 3.26615, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -26913,8 +26913,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.5029, y: -2.7407498, z: 0}
-    m_Extent: {x: 2.4123, y: 3.59905, z: 0}
+    m_Center: {x: -0.5028, y: -2.74085, z: 0}
+    m_Extent: {x: 2.4126, y: 3.5985498, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -27920,8 +27920,8 @@ MonoBehaviour:
 
     Go to the train station'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
-  m_sharedMaterial: {fileID: -1183843641732156792, guid: 5227aad5e3934634eafa4bdb3a84ffce, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -29007,8 +29007,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.502, y: -2.74065, z: 0}
-    m_Extent: {x: 2.4126, y: 3.59845, z: 0}
+    m_Center: {x: -0.50304997, y: -2.7403002, z: 0}
+    m_Extent: {x: 2.41295, y: 3.5987, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
@@ -29843,8 +29843,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.50355005, y: -2.7406, z: 0}
-    m_Extent: {x: 2.41275, y: 3.5991, z: 0}
+    m_Center: {x: -0.50264996, y: -2.74015, z: 0}
+    m_Extent: {x: 2.4119499, y: 3.59895, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.28
