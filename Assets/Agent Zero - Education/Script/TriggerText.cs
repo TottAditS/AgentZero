@@ -1,14 +1,14 @@
 using UnityEngine;
-using DG.Tweening; // Pastikan Anda memiliki DoTween di proyek Anda
-using TMPro; // Jika menggunakan TextMeshPro
+using DG.Tweening;
+using TMPro;
 public class TriggerText : MonoBehaviour
 {
     [Header("UI Text Settings")]
-    public GameObject textUI; // Objek UI untuk teks
-    public float fadeDuration = 0.5f; // Durasi animasi fade in/out
-    public float displayDuration = 2f; // Durasi teks ditampilkan sebelum menghilang
+    public GameObject textUI;
+    public float fadeDuration = 0.5f;
+    public float displayDuration = 2f;
 
-    private CanvasGroup canvasGroup; // Untuk kontrol transparansi UI
+    private CanvasGroup canvasGroup;
     private bool isPlayerInside = false;
 
     private void Start()

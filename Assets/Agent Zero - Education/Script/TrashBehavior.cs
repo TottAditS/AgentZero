@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class TrashBehavior : MonoBehaviour
 {
-    // Enum untuk tipe sampah
-    public enum TrashType
-    {
-        Organic,
-        Recyclable,
-        Hazardous
-    }
+    // Tipe sampah ini, menggunakan enum dari GameManager
+    public GameManager.TrashType trashType;
 
-    // Tipe sampah ini
-    public TrashType trashType;
+    public GameManager gameManager;  // Referensi GameManager
+
+    void Start()
+    {
+        // Mendapatkan referensi GameManager jika belum ada
+        gameManager = GetComponent<GameManager>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,16 +19,8 @@ public class TrashBehavior : MonoBehaviour
         TrashBin bin = collision.GetComponent<TrashBin>();
         if (bin != null)
         {
-            // Cek apakah tipe sampah sesuai dengan tong sampah
-            if (bin.acceptedTrashType == trashType)
-            {
-                Debug.Log("Correct bin! Trash disposed successfully.");
-                Destroy(gameObject); // Hapus sampah
-            }
-            else
-            {
-                Debug.Log("Wrong bin! Try again.");
-            }
+            // Panggil metode untuk mengatur logika di TrashBin
+            bin.HandleTrashSorting(this);
         }
     }
 }
