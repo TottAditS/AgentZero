@@ -20,16 +20,9 @@ public class TrashBin : MonoBehaviour
         if (trash.trashType == acceptedTrashType)
         {
             // Sampah benar, beri tahu GameManager
-            gameManager.RegisterTrashSorting(true);
+            gameManager.RegisterTrashSorting();
+            Destroy(trash.gameObject);
         }
-        else
-        {
-            // Sampah salah, beri tahu GameManager
-            gameManager.RegisterTrashSorting(false);
-        }
-
-        // Hapus sampah setelah di-sort
-        Destroy(trash.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

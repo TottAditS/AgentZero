@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Movement : MonoBehaviour
 {
@@ -16,9 +17,42 @@ public class Movement : MonoBehaviour
     [SerializeField] private Transform groundcek;
     [SerializeField] private LayerMask groundlayer;
 
+    private bool jumpPressed = false;
+    private bool uiInputActive = false;
+    public bool isButtonPressed = false;
+
+    // Fungsi untuk gerakan kiri dan kanan berdasarkan tombol UI
+    public void MoveLeft()
+    {
+        uiInputActive = true;
+        horizontal = -1f;
+    }
+
+    public void MoveRight()
+    {
+        horizontal = 1f; // Gerak kanan
+        uiInputActive = true;
+    }
+    public void StopMove()
+    {
+        horizontal = 0f; // Berhenti gerak
+    }
+    public void Jump()
+    {
+        jumpPressed = true;
+    }
+
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
+        if (!uiInputActive)
+        {
+            horizontal = Input.GetAxisRaw("Horizontal");
+        }
+        else
+        {
+            uiInputActive = false; // Reset UI input state after one frame
+        }
+
         animator.SetFloat("speed", Mathf.Abs(horizontal));
 
         //if (Mathf.Abs(horizontal) > 0)
@@ -34,14 +68,10 @@ public class Movement : MonoBehaviour
 
         flip();
 
-        if (Input.GetKeyDown(KeyCode.Space) && isground())
+        if ((Input.GetKeyDown(KeyCode.Space) || jumpPressed) && isground())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumppower);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && rb.velocity.y > 0f)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            jumpPressed = false; // Reset jump state
         }
 
     }
