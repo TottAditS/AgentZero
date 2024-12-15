@@ -54,6 +54,7 @@ public class UIManager : MonoBehaviour
     public void PanelTutorialClicked()
     {
         TutorialPanel.SetActive(false);
+        SoundManager.Instance.StopBGM();
         StartCoroutine(Prologue());
     }
 
@@ -78,13 +79,22 @@ public class UIManager : MonoBehaviour
             }
         }
         SceneManager.LoadScene("Education");
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Education")
+        {
+            SoundManager.Instance.StartBGM();
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
     }
 
     public void SetVolume()
     {
         if (volumeSlider != null)
         {
-            SoundManager.instance.SetMasterVolume(volumeSlider.value);
+            SoundManager.Instance.SetMasterVolume(volumeSlider.value);
         }
     }
 
