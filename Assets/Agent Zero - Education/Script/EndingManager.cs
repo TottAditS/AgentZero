@@ -32,17 +32,22 @@ public class EndingManager : MonoBehaviour
     }
     public void GameWin(string ending)
     {
-        StartCoroutine(PlayEnding());
+        Debug.Log("endingggg == " + ending);
 
         if (ending == "Good")
         {
             isGoodEnd = true;
+            Debug.Log("okegasgood");
+            StartCoroutine(PlayEnding());
         }
         else if (ending == "Bad")
         {
             isBadEnd = true;
+            Debug.Log("okegasbad");
+            StartCoroutine(PlayEnding());
         }
 
+        
         epilogPanel.SetActive(true);
     }
 
@@ -51,12 +56,14 @@ public class EndingManager : MonoBehaviour
         // Tentukan data berdasarkan ending
         if (isGoodEnd)
         {
+            Debug.Log("endinggood");
             endingImage.sprite = goodEndImage;
             endingText.text = goodEndText;
             audioSource.clip = goodEndAudio;
         }
         else if (isBadEnd)
         {
+            Debug.Log("superbad");
             endingImage.sprite = badEndImage;
             endingText.text = badEndText;
             audioSource.clip = badEndAudio;
@@ -67,6 +74,7 @@ public class EndingManager : MonoBehaviour
         endingText.gameObject.SetActive(true);
 
         // Mainkan narasi audio
+        Debug.Log("audioplayy");
         audioSource.Play();
 
         // Tunggu hingga audio selesai diputar

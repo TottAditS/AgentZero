@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        PMovement.enabled = true;
         Time.timeScale = 1f;
         Timer_Panel.SetActive(false);
         totalTrash = 0;
@@ -161,8 +162,15 @@ public class GameManager : MonoBehaviour
     }
 
     public EndingManager endingManager;
+    public Movement PMovement;
     public void Win()
     {
+        if (ending == "")
+        {
+            ending = "Bad";
+        }
+
+        PMovement.enabled = false;
         endingManager.GameWin(ending);
     }
 }
