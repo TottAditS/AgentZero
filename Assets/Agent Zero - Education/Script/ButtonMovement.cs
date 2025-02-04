@@ -1,26 +1,29 @@
 using UnityEngine;
-using UnityEngine.EventSystems;  // Untuk menangani event PointerDown dan PointerUp
+using UnityEngine.EventSystems;
 
 public class ButtonMovement : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public Movement movementScript;  // Referensi ke script Movement
+    public Movement movementScript; // Hubungkan ke script Movement
 
     // Fungsi untuk ketika tombol ditekan
     public void OnPointerDown(PointerEventData eventData)
     {
         if (gameObject.name == "ButtonLeft")
         {
-            movementScript.MoveLeft();
+            movementScript.MoveLeft(); // Panggil gerakan ke kiri
+            //Debug.Log("putarkekiriiee");
         }
         else if (gameObject.name == "ButtonRight")
         {
-            movementScript.MoveRight();
+            movementScript.MoveRight(); // Panggil gerakan ke kanan
+            //Debug.Log("putarkekananeee");
         }
     }
 
     // Fungsi untuk ketika tombol dilepas
     public void OnPointerUp(PointerEventData eventData)
     {
-        movementScript.StopMove();  // Berhenti bergerak saat tombol dilepas
+        movementScript.StopMove(); // Hentikan gerakan saat tombol dilepas
+        //Debug.Log("sotpsotpsototpo");
     }
 }

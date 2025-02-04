@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundcek;
     [SerializeField] private LayerMask groundlayer;
+    [SerializeField] private LayerMask objectlayer;
 
     private bool jumpPressed = false;
     private bool uiInputActive = false;
@@ -24,8 +25,8 @@ public class Movement : MonoBehaviour
     // Fungsi untuk gerakan kiri dan kanan berdasarkan tombol UI
     public void MoveLeft()
     {
+        horizontal = -1f; // Gerak kiri
         uiInputActive = true;
-        horizontal = -1f;
     }
 
     public void MoveRight()
@@ -33,9 +34,11 @@ public class Movement : MonoBehaviour
         horizontal = 1f; // Gerak kanan
         uiInputActive = true;
     }
+
     public void StopMove()
     {
-        horizontal = 0f; // Berhenti gerak
+        horizontal = 0f; // Berhenti
+        uiInputActive = false;
     }
     public void Jump()
     {
@@ -44,14 +47,24 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        if (!uiInputActive)
+        //if (!uiInputActive)
+        //{
+        //    horizontal = Input.GetAxisRaw("Horizontal");
+        //}
+
+        float keyboardInput = Input.GetAxisRaw("Horizontal");
+
+        if (keyboardInput != 0f)
         {
-            horizontal = Input.GetAxisRaw("Horizontal");
+            horizontal = keyboardInput; // Gerakan saat tombol ditekan
         }
-        else
+        else if (!uiInputActive) // Jika tidak ada input UI, reset horizontal
         {
-            uiInputActive = false; // Reset UI input state after one frame
+            horizontal = 0f; // Set horizontal ke 0 saat tombol dilepas
         }
+
+
+
 
         animator.SetFloat("speed", Mathf.Abs(horizontal));
 
@@ -68,7 +81,7 @@ public class Movement : MonoBehaviour
 
         flip();
 
-        if ((Input.GetKeyDown(KeyCode.Space) || jumpPressed) && isground())
+        if ((Input.GetKeyDown(KeyCode.Space) || jumpPressed) && (isground() || isObject()))
         {
             rb.velocity = new Vector2(rb.velocity.x, jumppower);
             jumpPressed = false; // Reset jump state
@@ -84,6 +97,10 @@ public class Movement : MonoBehaviour
     private bool isground()
     {
         return Physics2D.OverlapCircle(groundcek.position, 0.2f, groundlayer);
+    }
+    private bool isObject()
+    {
+        return Physics2D.OverlapCircle(groundcek.position, 0.2f, objectlayer);
     }
 
     private void flip()

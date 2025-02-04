@@ -32,7 +32,7 @@ public class TrashBin : MonoBehaviour
         if (trash != null)
         {
             // Logika pemeriksaan tipe sampah ditangani di TrashBin
-            Debug.Log($"Trash entered bin: {trash.trashType}");
+            //Debug.Log($"Trash entered bin: {trash.trashType}");
         }
     }
 }

@@ -47,7 +47,6 @@ public class EndingManager : MonoBehaviour
             StartCoroutine(PlayEnding());
         }
 
-        
         epilogPanel.SetActive(true);
     }
 

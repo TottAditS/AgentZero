@@ -1,12 +1,12 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     [Header("Game Settings")]
-    public int totalTrash; // Total number of trash items in the level
     public int trashCollected = 0; // Counter for collected trash
 
     [Header("Timer Settings")]
@@ -18,19 +18,8 @@ public class GameManager : MonoBehaviour
     public Slider timerSlider2;
     public GameObject gameBarrier;
 
-    [Header("Stage 3 Settings")]
-    public GameObject alphaChangingObject; // Object that changes alpha
-    public GameObject[] colorChangingObjects; // Array of objects that change color
-    public Color startColor = Color.gray;
-    public Color endColor = Color.blue;
-    public float colorChangeSpeed = 0.1f;
-
     public bool levelStarted = false;
     public bool gameEnded = false;
-    public float currentAlpha = 0f;
-
-    private Renderer alphaObjectRenderer;
-
     public static GameManager Instance; // Singleton instance
     public enum TrashType
     {
@@ -53,21 +42,16 @@ public class GameManager : MonoBehaviour
         PMovement.enabled = true;
         Time.timeScale = 1f;
         Timer_Panel.SetActive(false);
-        totalTrash = 0;
         trashCollected = 0;
-        currentAlpha = 0f;
         CurrlevelDuration = levelDuration;
         WaterWall.SetActive(true);
         gameBarrier.SetActive(true);
+        stage2trashbin.SetActive(true);
         levelStarted = false;
         gameEnded = false;
         ending = "";
-
-        if (alphaChangingObject != null)
-        {
-            alphaObjectRenderer = alphaChangingObject.GetComponent<Renderer>();
-            alphaObjectRenderer.material.color = new Color(startColor.r, startColor.g, startColor.b, 0f);
-        }
+        currentAlpha = 0f;
+        sliderFill = 0;
 
         if (timerSlider != null)
         {
@@ -80,7 +64,6 @@ public class GameManager : MonoBehaviour
             timerSlider2.value = 0;
         }
 
-        sliderFill = 0;
     }
 
     private float sliderFill;
@@ -99,6 +82,12 @@ public class GameManager : MonoBehaviour
                 EndGame();
             }
         }
+
+        if (tilemap != null)
+        {
+            Color currentColor = tilemap.color;
+            tilemap.color = new Color(currentColor.r, currentColor.g, currentColor.b, currentAlpha);
+        }
     } 
 
     public void StartLevel()
@@ -107,9 +96,12 @@ public class GameManager : MonoBehaviour
         Timer_Panel.SetActive(true);
     }
 
+    public Tilemap tilemap; // Drag and drop Tilemap di Inspector
+    [Range(0f, 1f)] // Slider untuk mengatur nilai alpha
+    public float currentAlpha = 1f; 
     public void RegisterTrashSorting()
     {
-        if (levelStarted)
+        if (levelStarted && !gameEnded)
         {
             trashCollected++;
         }
@@ -117,17 +109,23 @@ public class GameManager : MonoBehaviour
         if (gameEnded)
         {
             trashCollected++;
-            currentAlpha = Mathf.Clamp(trashCollected * 10, 0f, 1f);
-            Color currentColor = alphaObjectRenderer.material.color;
-            alphaObjectRenderer.material.color = new Color(currentColor.r, currentColor.g, currentColor.b, currentAlpha);
 
-            if (trashCollected > 10)
+            currentAlpha = Mathf.Clamp(trashCollected / 10f, 0f, 1f); // Skala trashCollected ke rentang 0-1
+
+            // Ubah alpha dari objek
+            if (tilemap != null)
             {
-                ending = "good";
+                Color currentColor = tilemap.color;
+                tilemap.color = new Color(currentColor.r, currentColor.g, currentColor.b, currentAlpha);
+            }
+
+            if (currentAlpha > 0.7)
+            {
+                ending = "Good";
             }
             else
             {
-                ending = "bad";
+                ending = "Bad";
             }
         }
     }
@@ -151,6 +149,7 @@ public class GameManager : MonoBehaviour
     }
 
     public GameObject WaterWall;
+    public GameObject stage2trashbin;
 
     private void EndGame()
     {
@@ -158,14 +157,27 @@ public class GameManager : MonoBehaviour
         WaterWall.SetActive(false);
         gameBarrier.SetActive(false);
         Timer_Panel.SetActive(false);
+        stage2trashbin.SetActive(false);
         Debug.Log("Level Completed. Trash Collected: " + trashCollected);
+        trashCollected = 0;
     }
 
     public EndingManager endingManager;
     public Movement PMovement;
     public void Win()
     {
+        SoundManager.Instance.StopBGM();
+
         if (ending == "")
+        {
+            ending = "Bad";
+        }
+
+        if (currentAlpha > 0.7)
+        {
+            ending = "Good";
+        }
+        else
         {
             ending = "Bad";
         }

@@ -33,31 +33,33 @@ public class GrabControl : MonoBehaviour
             grabPressed = false;
         }
 
-        RaycastHit2D grabcek = Physics2D.Raycast(detect.position, Vector2.right * transform.localScale, raydist);
+        //RaycastHit2D grabcek = Physics2D.Raycast(detect.position, Vector2.right * transform.localScale, raydist);
 
-        if (grabcek.collider != null && grabcek.collider.tag == "Object")
-        {
-            if (grabPressed && full == false)
-            {
-                grabcek.collider.gameObject.transform.parent = holder;
-                grabcek.collider.gameObject.transform.position = holder.position;
-                grabcek.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-                grabcek.collider.isTrigger = true;
-                full = true;
-                //Debug.Log("angkat");
-            }
+        //if (grabcek.collider != null && grabcek.collider.tag == "Object")
+        //{
+        //    if (grabPressed && full == false)
+        //    {
+        //        grabcek.collider.gameObject.transform.parent = holder;
+        //        grabcek.collider.gameObject.transform.position = holder.position;
+        //        grabcek.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+        //        grabcek.collider.isTrigger = true;
+        //        full = true;
+        //        //Debug.Log("angkat");
+        //    }
 
-            else if (grabPressed && full != false)
-            {
-                grabcek.collider.gameObject.transform.parent = null;
-                grabcek.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
-                grabcek.collider.isTrigger = false;
-                full = false;
-                //Debug.Log("turun");
-            }
+        //    else if (grabPressed && full != false)
+        //    {
+        //        grabcek.collider.gameObject.transform.parent = null;
+        //        grabcek.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+        //        grabcek.collider.isTrigger = false;
+        //        full = false;
+        //        //Debug.Log("turun");
+        //    }
 
-            grabPressed = false; // Reset grabPressed
-        }
+        //    grabPressed = false; // Reset grabPressed
+        //}
+
+        grabbing();
     }
     void grabbing()
     {
@@ -89,7 +91,6 @@ public class GrabControl : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         if (collision.CompareTag("Trashcan"))
         {
             full = false;

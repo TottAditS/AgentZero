@@ -1,11 +1,15 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class InGameUIManager : MonoBehaviour
 {
     [Header("UI Elements")]
     public GameObject pauseMenu; // Assign your pause menu UI here
+    public GameObject mobileButtonsPanel; // Panel untuk mobile buttons
+    public Toggle mobileToggle; // Toggle UI dari Inspector
+
 
     private bool isGamePaused = false;
 
@@ -15,8 +19,35 @@ public class InGameUIManager : MonoBehaviour
         {
             pauseMenu.SetActive(false); // Ensure pause menu is hidden initially
         }
+        if (mobileToggle != null)
+        {
+            mobileButtonsPanel.SetActive(mobileToggle.isOn);
+            mobileToggle.onValueChanged.AddListener(ToggleMobilePanel);
+        }
+        else
+        {
+            Debug.LogWarning("Toggle reference is missing!");
+        }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            TogglePauseGame();
+        }
+    }
+    private void ToggleMobilePanel(bool isActive)
+    {
+        if (mobileButtonsPanel != null)
+        {
+            mobileButtonsPanel.SetActive(isActive);
+        }
+        else
+        {
+            Debug.LogWarning("Mobile Buttons Panel reference is missing!");
+        }
+    }
     // Toggle Pause
     public void TogglePauseGame()
     {
